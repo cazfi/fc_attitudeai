@@ -1,19 +1,15 @@
 ## Process this file with automake to produce Makefile.in
-#FC_HOME = ~/Programs/freeciv-2.4.2/
-#aimoduledir=$(libdir)/fcai
+
 aimodule_LTLIBRARIES = fc_ai_attitude.la
 
-#ACLOCAL_AMFLAGS = -I m4
-
 AM_CPPFLAGS = \
--I$(top_srcdir) \
--I$(top_srcdir)/gen_headers/ \
--I$(top_srcdir)/utility \
--I$(top_srcdir)/common \
--I$(top_srcdir)/ai \
--I$(top_srcdir)/server \
--I$(top_srcdir)/server/advisors \
--I$(top_srcdir)/ai/default
+-I$(FCBLDPATH)/gen_headers/ \
+-I$(FCSRCPATH)/utility \
+-I$(FCSRCPATH)/common \
+-I$(FCSRCPATH)/ai \
+-I$(FCSRCPATH)/server \
+-I$(FCSRCPATH)/server/advisors \
+-I$(FCSRCPATH)/ai/default
 
 fc_ai_attitude_la_SOURCES = \
 utils.h \
@@ -27,4 +23,3 @@ attitudeai.h
 
 fc_ai_attitude_la_LDFLAGS = -module
 fc_ai_attitude_la_LIBADD = -lm
-
