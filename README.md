@@ -36,8 +36,8 @@ as much as possible, I try to mimic the freeciv code style to make it
 easy for others to implement it with their own freeciv based projects.
 
 CURRENT STATE
-Doesn't add functionality in it's current state. 
-It compiles with freeciv-trunk as of writing. This may change. 
+Doesn't add functionality in it's current state.
+It compiles with freeciv trunk and S2_6 as of writing. This may change.
 It is recommended to use only on Linux at the moment.
 
 HOW TO BUILD
@@ -46,6 +46,7 @@ HOW TO BUILD
 2) ./autogen.sh in fc_attitudeai
 3) run 'configure' for fc_attitudeai, with options
    --with-freecivbld=/path/to/freeciv/builddir --with-freecivsrc=/path/to/freeciv/srcdir
+   --with-aimoddir=/path/must/match/freeciv/aimodules/option
 4) make install
 
 HOW TO USE IN FREECIV
