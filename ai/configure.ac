@@ -20,7 +20,7 @@ AM_INIT_AUTOMAKE
 # Checks for library functions.
 
 AC_ARG_WITH([freecivbld],
-  AS_HELP_STRING([--with-freecivbdl], [path to freeciv build tree]),
+  AS_HELP_STRING([--with-freecivbld], [path to freeciv build tree]),
             [FCBLDPATH=$withval],
             [FCBLDPATH=".."])
 AC_ARG_WITH([freecivsrc],
